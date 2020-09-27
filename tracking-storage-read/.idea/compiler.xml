@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="tracking-storage-read-model" />
+        <module name="tracking-storage-read-commons" />
+        <module name="tracking-storage-read-dao" />
+        <module name="tracking-storage-read-api" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
