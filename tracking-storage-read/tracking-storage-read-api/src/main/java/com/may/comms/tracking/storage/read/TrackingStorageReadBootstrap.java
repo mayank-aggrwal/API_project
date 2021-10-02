@@ -39,6 +39,12 @@ public class TrackingStorageReadBootstrap {
 	public mountSubRoutes() {
 		this.trackingStorageReadRouter.post('events').handler(this.trackingHandler::createEvent);
 		this.trackingStorageReadRouter.post('events/update').handler(this.trackingHandler::modifyEvent);
+		this.trackingStorageReadRouter.get('health').handler(req -> {
+			req.response().end("Service is up and running.");
+		});
+		this.trackingStorageReadRouter.post('test').handler(req -> {
+			req.response().end("Test route.");
+		});
 	}
 
 }
