@@ -26,5 +26,10 @@ public class TrackingStorageReadService extends AbstractVerticle {
             }
         });
     }
+    
+    // Test route
+    public void stop(final Future<Void> stopFuture) {
+        System.out.println("Stop");
+    }
 
 }
