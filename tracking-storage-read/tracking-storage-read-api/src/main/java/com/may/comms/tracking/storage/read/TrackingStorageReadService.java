@@ -25,6 +25,10 @@ public class TrackingStorageReadService extends AbstractVerticle {
                 startFuture.fail(result.cause());
             }
         });
+        bootstrapFuture.setHandler(result -> {
+                LOGGER.info("Succesfully deployed tracking storge servicce");
+            
+        });
     }
     
     // Test route
