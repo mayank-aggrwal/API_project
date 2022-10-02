@@ -42,6 +42,9 @@ public class TrackingStorageReadBootstrap {
 		this.trackingStorageReadRouter.get('health').handler(req -> {
 			req.response().end("Service is up and running.");
 		});
+		this.trackingStorageReadRouter.get('liveness/probe').handler(req -> {
+			req.response().end("Liveness Probe : Service is up and running.");
+		});
 		this.trackingStorageReadRouter.post('test').handler(req -> {
 			req.response().end("Test route.");
 		});
